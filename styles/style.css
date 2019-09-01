@@ -1,0 +1,116 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url(../fonts/digital-7.ttf);
+}
+
+body {
+	background-color: #3399cc;
+	height: 100vh;
+}
+
+.calc-cont {
+	width: 300px;
+	margin: auto;
+	position: relative;
+	top: 10px;
+	-webkit-box-shadow: 1px 10px 50px #336666;
+	box-shadow: 1px 10px 50px #336666;
+}
+
+header {
+	background-color: rgba(51, 51, 51, 0.8);
+}
+
+.flexbox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 5px;
+	color: #fff;
+	font-size: 12px;
+	font-family: 'SEGOE UI';
+}
+
+.input-figures {
+	background-color: rgba(51, 51, 51, 0.6);
+	position: relative;
+	height: 200px;
+	line-height: 300px;
+	padding: 0 15px;
+}
+
+.input-figures #inp {
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	width: 100%;
+	font-size: 60px;
+	text-align: right;
+	height: 75px;
+	color: #fff;
+	font-family: 'myFirstFont';
+}
+
+.flexbox2 ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flexbox2 ul li:nth-child(1),
+.flexbox2 ul li:nth-child(5),
+.flexbox2 ul li:nth-child(9),
+.flexbox2 ul li:nth-child(13),
+.flexbox2 ul li:nth-child(16) {
+	border-left: 1px solid transparent;
+}
+
+.flexbox2 ul li {
+	width: 74px;
+	height: 74px;
+	background-color: rgba(51, 51, 51, 0.7);
+	border-left: 1px solid rgba(170, 170, 170, 0.3);
+	border-top: 1px solid rgba(170, 170, 170, 0.3);
+	text-align: center;
+	line-height: 73px;
+	font-size: 28px;
+	color: #fff;
+	font-family: 'myFirstFont';
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.flexbox2 ul .numbers:hover {
+	background-color: #00ffff;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.operation {
+	color: rgba(0, 255, 255, 0.9) !important;
+}
+
+.clear {
+	color: rgba(0, 255, 255, 0.9) !important;
+}
+
+.nil {
+	width: 149px !important;
+}
+
+#result {
+	background-color: #00ffff;
+	color: #fff !important;
+	height: 149px !important;
+	margin-top: -75px;
+	line-height: 149px;
+}
